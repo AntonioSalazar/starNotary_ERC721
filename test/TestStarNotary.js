@@ -99,8 +99,8 @@ it('can add the star name and star symbol properly', async() => {
 //     // 3. Verify the star owner changed.
 // });
 
-// it('lookUptokenIdToStarInfo test', async() => {
-//     // 1. create a Star with different tokenId
-//     // 2. Call your method lookUptokenIdToStarInfo
-//     // 3. Verify if you Star name is the same
-// });
+it('lookUptokenIdToStarInfo test', async() => {
+    // 1. create a Star with different tokenId
+    // 2. Call your method lookUptokenIdToStarInfo
+    // 3. Verify if you Star name is the same
+});
