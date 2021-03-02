@@ -18,7 +18,9 @@ web3 1.2.4
 ### Task 1
 
 - Your Project is to Modify the StarNotary version 2 contract code to achieve the following:
-- Add a name and a symbol for your starNotary tokens. Resource
+
+- Add a name and a symbol for your starNotary tokens.
+  ✔️ Completed, in openzeppelin-solidity 3.4.0, the ERC721.sol contract requires for you to pass two arguments to the constructor, a token name and a symbol, after checking the contract json representation in the build folder I can see both arguments were correctly added.
 - Add a function lookUptokenIdToStarInfo, that looks up the stars using the Token ID, and then returns the name of the star.
 - Add a function called exchangeStars, so 2 users can exchange their star tokens...Do not worry about the price, just write code to exchange stars between users.
 - Write a function to Transfer a Star. The function should transfer a star from the address of the caller. The function should accept 2 arguments, the address to transfer the star to, and the token ID of the star.
