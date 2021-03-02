@@ -4,7 +4,9 @@ pragma solidity >=0.6.0 <0.8.0;
 import "../node_modules/openzeppelin-solidity/contracts/token/ERC721/ERC721.sol";
 
 // StarNotary Contract declaration inherits the ERC721 openzeppelin implementation
-contract StarNotary is ERC721('AntonioToken', 'AST'){
+contract StarNotary is ERC721("AntonioSalazarToken", "AST"){
+    
+
     
     // Star data
     struct Star {
@@ -55,6 +57,7 @@ contract StarNotary is ERC721('AntonioToken', 'AST'){
     // Implement Task 1 lookUptokenIdToStarInfo
     function lookUptokenIdToStarInfo (uint _tokenId) public  view returns (string memory) {
         //1. You should return the Star saved in tokenIdToStarInfo mapping
+        //return tokenIdStarInfo(_tokenId);
     }
 
     // Implement Task 1 Exchange Stars function
