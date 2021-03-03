@@ -57,12 +57,7 @@ contract StarNotary is ERC721("AntonioSalazarToken", "AST"){
     // Implement Task 1 lookUptokenIdToStarInfo
     function lookUptokenIdToStarInfo (uint _tokenId) public  view returns (string memory) {
         //1. You should return the Star saved in tokenIdToStarInfo mapping
-<<<<<<< HEAD
-        return tokenIdStarInfo(_tokenId);
-=======
-        name = tokenIdStarInfo[_tokenId];
-        return name;
->>>>>>> b640289dfef94bec9f84225db284806cfa67c7bc
+        return tokenIdStarInfo[_tokenId].name;
     }
 
     // Implement Task 1 Exchange Stars function

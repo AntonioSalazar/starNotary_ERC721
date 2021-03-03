@@ -101,6 +101,10 @@ it('can add the star name and star symbol properly', async() => {
 
 it('lookUptokenIdToStarInfo test', async() => {
     // 1. create a Star with different tokenId
+    let starId = 7;
+    let instance = await StarNotary.deployed();
     // 2. Call your method lookUptokenIdToStarInfo
+    await instance.createStar('Test Star', starId, { from: accounts[0]});
     // 3. Verify if you Star name is the same
+    assert.equal(await instance.lookUptokenIdToStarInfo(starId), 'Test Star');
 });
