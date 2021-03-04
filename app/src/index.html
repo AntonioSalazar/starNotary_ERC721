@@ -1,36 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <head>
     <title>StarNotary DApp</title>
   </head>
   <style>
-    input {
-      display: block;
-      margin-bottom: 12px;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
     }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .title{
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      background: #1C262F;
+    }
+
+    .title h1 {
+      color: #fff;
+    }
+
+    .container{
+      width: 80%;
+      margin: auto;
+    }
+
+    .newstar {
+      padding: 20px;
+    }
+
+    .newstar h1 {
+      margin-bottom: 20px;
+    }
+
+    .newstar button {
+      height: 60px;
+      width: 30%;
+      border-radius: 5px;
+      background: #3B7A9B;
+      color: #fff;
+      border: transparent;
+    }
+
+    .newstar button:hover{
+      box-shadow: 2px 2px 4px #000000;
+      cursor: pointer;
+    }
+
+    .newstar-labels {
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+    }
+
+    .newstar-labels input {
+      width: 30%;
+      height: 50px;
+      margin: 20px 0;
+    }
+
+    .newstar-labels input[type="text"]{
+      font-size: 24px;
+    }
+
   </style>
-  <body>
+<body>
+  <div class="title">
     <h1>StarNotary Token DAPP</h1>
+  </div>
 
-  <hr>
-
-  <br>
-    <h1>Create a Star</h1>
-    <br><label for="starName">Star Name:</label><input type="text" id="starName"></input>
-    <br><label for="starId">Star ID:</label><input type="text" id="starId"></input>
-    <br><br><button id="createStar" onclick="App.createStar()">Create Star</button>
-    <br>
-    <br>
-    <hr>
-    <br>
-    <h1>Look up a Star</h1>
-    <br><label for="name">Star ID:</label><input type="text" id="lookid"></input>
-    <br><br><button onclick="App.lookUp()">Look Up a Star</button>
-    <hr>
-    <br>
+  <div class="container">
+    <div class="newstar">
+      <h1>Create a Star</h1>
+      <div class="newstar-labels">
+        <label for="starName">Star Name:</label><input type="text" id="starName"></input>
+        <label for="starId">Star ID:</label><input type="text" id="starId"></input>
+        <button id="createStar" onclick="App.createStar()">Create Star</button>
+      </div>
+    </div>
+    
+    
+    
+    <div class="lookupstar">
+      <h1>Look up a Star</h1>
+      <label for="name">Star ID:</label><input type="text" id="lookid"></input>
+      <button onclick="App.lookUp()">Look Up a Star</button>
+    </div>
+    
+    
     <span id="status"></span>
 
     <br>
+  </div>
     <script src="index.js"></script>
-  </body>
-</html> 
+</body>
+</html>
