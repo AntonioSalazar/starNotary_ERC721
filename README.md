@@ -57,5 +57,6 @@ ERC-721 Token Address(Rinkeby): 0xed6bffd1d180bece5cb9a5a6b068af0a6377adb5
 
 - Modify the front end of the DAPP to achieve the following:
 - Lookup a star by ID using tokenIdToStarInfo() (you will have to add code for this in your index.html and index.js files)
+  <br />✔️ Completed, able to look for an star by it's id now
 
   <br /> Made by Antonio Salazar. 😘
