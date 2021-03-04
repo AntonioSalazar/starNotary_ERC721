@@ -7,7 +7,9 @@
     "test": "test"
   },
   "dependencies": {
-    "openzeppelin-solidity": "^3.4.0"
+    "dotenv": "^8.2.0",
+    "openzeppelin-solidity": "^3.4.0",
+    "truffle-hdwallet-provider": "^1.0.17"
   },
   "devDependencies": {},
   "scripts": {

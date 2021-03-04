@@ -13,6 +13,14 @@ openzeppelin-solidity 3.4.0
 web3 1.2.4
 ```
 
+## TOKEN INFO 💥🔥❗
+
+```
+ERC-721 Token Name: AntonioSalazarToken
+ERC-721 Token Symbol: AST
+ERC-721 Token Address(Rinkeby): 0xed6bffd1d180bece5cb9a5a6b068af0a6377adb5
+```
+
 ## Tasks ✒️ 📄
 
 ### Task 1
@@ -52,3 +60,5 @@ web3 1.2.4
 
 - Modify the front end of the DAPP to achieve the following:
 - Lookup a star by ID using tokenIdToStarInfo() (you will have to add code for this in your index.html and index.js files)
+
+  <br /> Made by Antonio Salazar. 😘
