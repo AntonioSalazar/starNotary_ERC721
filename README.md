@@ -25,14 +25,19 @@ web3 1.2.4
 - Add a function lookUptokenIdToStarInfo, that looks up the stars using the Token ID, and then returns the name of the star.
   <br />✔️ Completed, lookUptokenIdToStarInfo function was added. test has passed. Able to get a star name when giving the id.
 - Add a function called exchangeStars, so 2 users can exchange their star tokens...Do not worry about the price, just write code to exchange stars between users.
+  <br />✔️ Completed, added the function exchangeStars, I tested this function in Remix and it worked, it has also passed the mocha test
 - Write a function to Transfer a Star. The function should transfer a star from the address of the caller. The function should accept 2 arguments, the address to transfer the star to, and the token ID of the star.
+  <br />✔️ Completed, the transferStar function is working, tested this in Remix the function has also passed the mocha test.
 
 ### Task 2
 
 - Add supporting unit tests, to test the following:
 - The token name and token symbol are added properly.
+  <br />✔️By taking a look at the contract json representation I can confirm, token name and Symbol was properly added
 - 2 users can exchange their stars.
+  <br />✔️ Able to exchange a star between two users.
 - Stars Tokens can be transferred from one address to another.
+  <br />✔️ Able to transfer a token from one address to another
 
 ### Task 3
 
