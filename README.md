@@ -51,10 +51,7 @@ ERC-721 Token Address(Rinkeby): 0xed6bffd1d180bece5cb9a5a6b068af0a6377adb5
 
 - Deploy your Contract to Rinkeby
 - Edit the truffle.config file to add settings to deploy your contract to the Rinkeby Public Network.
-  Helper Points:
-  Command used to deploy to Rinkeby truffle migrate --reset --network rinkeby
-  You will need to have your Metamask’s seed and Infura setup.
-  This was shown to you in detail in the lesson on Solidity, while creating ERC-20 tokens on Rinkeby.
+  <br />✔️ Completed, contract has been deployed to Rinkeby's public network.
 
 ### Task 4
 
