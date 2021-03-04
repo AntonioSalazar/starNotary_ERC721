@@ -42,7 +42,7 @@
       margin-bottom: 20px;
     }
 
-    .newstar button {
+     button {
       height: 60px;
       width: 30%;
       border-radius: 5px;
@@ -51,7 +51,7 @@
       border: transparent;
     }
 
-    .newstar button:hover{
+     button:hover{
       box-shadow: 2px 2px 4px #000000;
       cursor: pointer;
     }
@@ -72,6 +72,16 @@
       font-size: 24px;
     }
 
+    .lookupstar{
+      margin-top: 20px;
+      padding: 20px;
+    }
+    #status{
+      padding: 20px;
+      margin-bottom: 50px;
+      font-size: 22px;
+      border-bottom: 1px solid #000;
+    }
   </style>
 <body>
   <div class="title">
@@ -92,10 +102,13 @@
     
     <div class="lookupstar">
       <h1>Look up a Star</h1>
-      <label for="name">Star ID:</label><input type="text" id="lookid"></input>
-      <button onclick="App.lookUp()">Look Up a Star</button>
+      <div class="newstar-labels">
+        <label for="name">Star ID:</label><input type="text" id="lookid"></input>
+        <button onclick="App.lookUp()">Look Up a Star</button>
+      </div>
     </div>
     
+    <span id="foundedStar"></span>
     
     <span id="status"></span>
 
